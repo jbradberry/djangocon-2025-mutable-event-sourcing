@@ -13,7 +13,7 @@ services:
     volumes:
       - .local/postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "postgres"]
+      test: ["CMD", "pg_isready", "-U", "django"]
       interval: 10s
       timeout: 5s
       retries: 5
